@@ -25,12 +25,8 @@
 #include <spawn.h>
 #include "offsets.h"
 #include "kmem.h"
-#include "QiLin.h"
 extern char **environ;
 uint64_t evil;
-uint64_t kernproc = 0xfffffff0075dd0a0;
-uint64_t rootvnode = 0xfffffff0075dd088;
-uint64_t vfs_rootnode = 0xfffffff0071ff700;
 uint64_t find_port_address(mach_port_t port, int disposition);
 
 kern_return_t mach_vm_read(vm_map_t target_task,
