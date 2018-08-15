@@ -25,8 +25,6 @@
 #include <spawn.h>
 #include "offsets.h"
 #include "kmem.h"
-extern char **environ;
-uint64_t evil;
 uint64_t find_port_address(mach_port_t port, int disposition);
 
 kern_return_t mach_vm_read(vm_map_t target_task,
